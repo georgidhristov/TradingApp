@@ -29,6 +29,8 @@ export default function Hero() {
       <div className="max-w-3xl text-center mx-auto">
         <img src={logo} alt="Tradevus" className="h-16 md:h-13 mx-auto mb-8" />
 
+        {/* VUS = Value, Utility, Success */}
+
         {/* <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6 tracking-tight">
           You’re Not Losing Because of Strategy.
         </h1> */}
