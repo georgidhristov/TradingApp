@@ -1,14 +1,4 @@
-import { useState } from "react";
-
 export default function Waitlist() {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(email);
-    setEmail("");
-  };
-
   return (
     <section id="waitlist" className="px-6 py-24">
       <div className="max-w-xl mx-auto text-center">
@@ -21,23 +11,24 @@ export default function Waitlist() {
         </p>
 
         <form
-          onSubmit={handleSubmit}
+          action="https://formspree.io/f/mykbkwpl"
+          method="POST"
           className="flex flex-col sm:flex-row gap-4 p-2 bg-gray-100 dark:bg-[#121821] rounded-2xl"
         >
           <input
             type="email"
+            name="email"
             required
             placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            className="flex-1 px-4 py-3 rounded-xl bg-transparent outline-none"
+            pattern="[^\s@]+@[^\s@]+\.[^\s@]+"
+            className="flex-1 px-4 py-3 rounded-xl bg-transparent outline-none border border-transparent focus:border-green-500 focus:invalid:border-red-500"
           />
 
           <button
             type="submit"
             className="bg-green-500 hover:bg-green-400 text-black px-6 py-3 rounded-xl font-semibold transition"
           >
-            Join Waitlist
+            Get Early Access
           </button>
         </form>
 
