@@ -3,17 +3,17 @@ export default function FeaturesSection() {
     {
       title: "Track Your Performance",
       desc: "See your equity curve, win rate, and key metrics in one place.",
-      image: "src/assets/dashboard.png",
+      image: "/public/images/dashboard.png",
     },
     {
       title: "Understand Your Behavior",
       desc: "Identify overtrading and patterns that impact your results.",
-      image: "src/assets/insight.png",
+      image: "/public/images/insight.png",
     },
     {
       title: "Everything in One Place",
       desc: "Auto-sync trades, track news, and manage risk without manual work.",
-      image: "src/assets/futures.png",
+      image: "/public/images/features.png",
     },
   ];
 
